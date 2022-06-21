@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             float positionY = Random.Range(stageData.LimitMin.y, stageData.LimitMax.y);
-            Instantiate(enemyPrefab, new Vector3(stageData.LimitMax.x + 1.0f, 0.0f, positionY), Quaternion.identity);
+            Instantiate(enemyPrefab, new Vector3(stageData.LimitMax.x + 1.0f, positionY, 0), Quaternion.identity);
             yield return new WaitForSeconds(spawnTime);
         }
     }
