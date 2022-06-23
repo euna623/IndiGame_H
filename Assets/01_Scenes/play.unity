@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83539b6d5542ecc4591eaa45c549c101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneName: die
   stageData: {fileID: 11400000, guid: 0d0a53b07edf9ea41b70f8733c98068f, type: 2}
   attackPrefab: {fileID: 8417534907647636565, guid: 60150353ccbef39459eb8f606d9be178, type: 3}
 --- !u!114 &405799581

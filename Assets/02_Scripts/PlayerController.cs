@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private StageData stageData;
+    [SerializeField] string nextSceneName;
+    [SerializeField] StageData stageData;
     private Weapon weapon;
-    [SerializeField] private GameObject attackPrefab;
+    [SerializeField] GameObject attackPrefab;
 
     int score;
     public int Score
@@ -32,5 +34,11 @@ public class PlayerController : MonoBehaviour
     {
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, stageData.LimitMin.x, stageData.LimitMax.x),
                                          Mathf.Clamp(transform.position.y, stageData.LimitMin.y, stageData.LimitMax.y));
+    }
+
+    public void OnDie()
+    {
+        PlayerPrefs.SetInt("Score", score);
+        SceneManager.LoadScene(nextSceneName);
     }
 }

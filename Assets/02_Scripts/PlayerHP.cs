@@ -5,9 +5,10 @@ using System.Collections;
 
 public class PlayerHP : MonoBehaviour
 {
-    [SerializeField] private float maxHP = 10;
-    private float curHP;
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] float maxHP = 10;
+    float curHP;
+    SpriteRenderer spriteRenderer;
+    PlayerController playerController;
 
     public float MaxHP => maxHP;
     public float CurHP => curHP;
@@ -16,6 +17,7 @@ public class PlayerHP : MonoBehaviour
     {
         curHP = maxHP;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerController = GetComponent<PlayerController>();
     }
 
     public void takeDamage(float damage)
@@ -26,7 +28,7 @@ public class PlayerHP : MonoBehaviour
 
         if(curHP <= 0)
         {
-            Debug.Log("Player HP : 0.. Die");
+            playerController.OnDie();
         }
     }
 
