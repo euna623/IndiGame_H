@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageData: {fileID: 11400000, guid: 0d0a53b07edf9ea41b70f8733c98068f, type: 2}
   enemyPrefab: {fileID: 1644464389497635089, guid: 7a9e0f96aeba907469515ccfcc34de72, type: 3}
-  spawnTime: 0.5
+  spawnTime: 1
 --- !u!1 &320227233
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 405799583}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
