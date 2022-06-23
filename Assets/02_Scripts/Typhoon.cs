@@ -10,7 +10,7 @@ public class Typhoon : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerHP>().takeDamage(damage);
-            Destroy(gameObject);
+            
         }
     }
 }

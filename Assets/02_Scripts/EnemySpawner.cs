@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private StageData stageData;
-    [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private float spawnTime;
+    [SerializeField] StageData stageData;
+    [SerializeField] GameObject enemyPrefab;
+    [SerializeField] GameObject enemyPrefab_2;
+    [SerializeField] float spawnTime;
 
     private void Awake()
     {
         StartCoroutine("SpawnEnemy");
     }
 
-    private IEnumerator SpawnEnemy()
+    IEnumerator SpawnEnemy()
     {
         while (true)
         {

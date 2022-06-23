@@ -8,6 +8,12 @@ public class PlayerController : MonoBehaviour
     private Weapon weapon;
     [SerializeField] private GameObject attackPrefab;
 
+    int score;
+    public int Score
+    {
+        set => score = Mathf.Max(0, value);
+        get => score;
+    }
 
     private void Awake()
     {
