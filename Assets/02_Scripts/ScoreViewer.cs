@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class ScoreViewer : MonoBehaviour
 {
     [SerializeField] PlayerController PlayerController;
-    TextMeshProUGUI textScore;
+    Text textScore;
 
     private void Awake()
     {
-        textScore = GetComponent<TextMeshProUGUI>();
+        textScore = GetComponent<Text>();
     }
 
     private void Update()
