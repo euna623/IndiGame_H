@@ -11,6 +11,6 @@ public class YouScoreViewer : MonoBehaviour
     {
         textYouScore = GetComponent<Text>();
         int score = PlayerPrefs.GetInt("Score");
-        textYouScore.text = "You Score " + score;
+        textYouScore.text = "Score " + score;
     }
 }
