@@ -170,7 +170,7 @@ MonoBehaviour:
   typhoonLinePrefab: {fileID: 2859513824843677498, guid: 9690e0d6d5c6ba54ca7a50afea103efc, type: 3}
   typhoonPrefab: {fileID: 1008945286179006021, guid: f42ececd406533d4f96ec67a40bfb489, type: 3}
   minSpawnTime: 5
-  maxSpawnTime: 10
+  maxSpawnTime: 3
 --- !u!1 &101006832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +1194,52 @@ MonoBehaviour:
   scroll: 25
   moveSpeed: 3
   moveDirection: {x: -1, y: 0, z: 0}
+--- !u!1 &1201790206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201790208}
+  - component: {fileID: 1201790207}
+  m_Layer: 0
+  m_Name: ItemSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1201790207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201790206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa53b980da47c144d915bef1847539bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageData: {fileID: 11400000, guid: 0d0a53b07edf9ea41b70f8733c98068f, type: 2}
+  itemPrefab: {fileID: 7066507033052865352, guid: 463f8f4a1ed27b54bbc0f8c6a57e1ad9, type: 3}
+  spawnTime: 10
+--- !u!4 &1201790208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201790206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1339631973
 GameObject:
   m_ObjectHideFlags: 0

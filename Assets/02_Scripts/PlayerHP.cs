@@ -9,6 +9,7 @@ public class PlayerHP : MonoBehaviour
     float curHP;
     SpriteRenderer spriteRenderer;
     PlayerController playerController;
+    ItemSpawner iS;
 
     public float MaxHP => maxHP;
     public float CurHP => curHP;
@@ -18,18 +19,35 @@ public class PlayerHP : MonoBehaviour
         curHP = maxHP;
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerController = GetComponent<PlayerController>();
-    }
+        iS = FindObjectOfType<ItemSpawner>();
 
+    }
+    private void Update()
+    {
+        if(curHP > maxHP)
+        {
+            curHP = MaxHP;
+        }
+    }
     public void takeDamage(float damage)
     {
         curHP -= damage;
         StopCoroutine("HitColorAnimation");
         StartCoroutine("HitColorAnimation");
 
-        if(curHP <= 0)
+        if (curHP <= maxHP / 2)
+        {
+            iS.ItemSpawn();
+        }
+
+        if (curHP <= 0)
         {
             playerController.OnDie();
         }
+    }
+    public void getItem(float heal)
+    {
+        curHP += heal;
     }
 
     private IEnumerator HitColorAnimation()
