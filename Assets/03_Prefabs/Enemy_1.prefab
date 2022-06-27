@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b26cdef737a524584d8a90b12245e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 12
   moveDir: {x: -1, y: 0, z: 0}
 --- !u!50 &2989429872559761735
 Rigidbody2D:
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a546d43c38e5e143ab98bff722a197a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 2
   scorePoint: 1
 --- !u!114 &-5602571772422331775
 MonoBehaviour:

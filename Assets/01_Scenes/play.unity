@@ -253,7 +253,7 @@ MonoBehaviour:
   stageData: {fileID: 11400000, guid: 0d0a53b07edf9ea41b70f8733c98068f, type: 2}
   enemyPrefab: {fileID: 1644464389497635089, guid: 7a9e0f96aeba907469515ccfcc34de72, type: 3}
   enemyPrefab_2: {fileID: 6743758675743564909, guid: 3e9c72cb1338de84882c8d3596157667, type: 3}
-  spawnTime: 1
+  spawnTime: 0.5
 --- !u!1 &320227233
 GameObject:
   m_ObjectHideFlags: 0
